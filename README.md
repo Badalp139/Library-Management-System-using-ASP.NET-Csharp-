@@ -10,7 +10,7 @@ Website Project
 
 ## Technology, Tools and Plugin Used
 
-. Visual Studio 2019
+. Visual Studio 2022
 
 . C#
 
@@ -25,13 +25,13 @@ Website Project
 . DataTabel.js
 
 ## Abstract
-Library management system project used to track books owned, issue book, return book records, penalty records, and students who have borrowed.This project efficiently manages book records, book issuance, returns, penalties, and student borrowing in a seamless interface. Perfect for BCA/MCA/B.Tech/O Level/A Level/Polytechnic students seeking a robust final year project!
+Library management system project used to track books owned, issue book, return book records, penalty records, and students who have borrowed.This project efficiently manages book records, book issuance, returns, penalties, and student borrowing in a seamless interface.
 
 ## Technology
-ASP.Net Visual Studio 2019 with C# Programming Language
+ASP.Net Visual Studio 2022 with C# Programming Language
 
 ## Database
-SQL-Server 2008
+SQL-Server 2022
 
 This Library management system asp.net project has
 
