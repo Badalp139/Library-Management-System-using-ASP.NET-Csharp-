@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminSite.master.cs" Inherits="LibraryManagementSystem.Admin.AdminSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="../Logoimg/logolcon.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device, initial-scale=1" />
+
+    <%--1-Bootstarp css--%>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <%-- 2-Datatable css--%>
+    <link href="../datatable/css/dataTables.dataTables.min.css" rel="stylesheet" />
+
+    <%--3-Fontawesome--%>
+    <link href="../fontawesome/css/all.css" rel="stylesheet" />
+
+    <%-- 4-Jquery js--%>
+    <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+
+    <%--5-Popper js--%>
+    <script src="../bootstrap/js/popper.min.js"></script>
+
+    <%--6-Bootstarp js--%>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <%--7-Sweetalert--%>
+    <link href="../SweetAlert/Styles/sweetalert.css" rel="stylesheet" />
+    <script src="../SweetAlert/Scripts/sweetalert.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="default.aspx">
+                    <img src="../Logoimg/logolcon.jpg" alt="logo" width="49" heightt="49" />LMS Application</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="author/Authoradd.aspx"><b>Home </b></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Addauthor.aspx"><b>Add Author</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="Add_publisher.aspx"><b>Publisher</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="UpdateMemberDetails.aspx"><b>Member</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="AdminBookInventory.aspx"><b>Book Inventory</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="bookIssueReturn.aspx"><b>Issue/Return</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="ViewBooks.aspx"><b>ViewBook</b></a></li>
+                    </ul>
+                </div>
+                <%-- navnar right icon--%>
+                <div class="pmd-navbar-right-icon ml-auto">
+                    <a class="btn btn-primary" href="#">
+                        <asp:Label ID="lblUserName" runat="server" Text="Name" ForeColor="gold" Font-Bold="true"></asp:Label></a>
+                    <a class="btn btn-primary" href="../signout.aspx">Sign Out</a>
+
+                </div>
+            </nav>
+            <div class="jumbotron text-center alert alert-info">
+                <h3>Admin Panel of LMS</h3>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <%--<div class="col-sm-2 border border-info">
+               
+                <ul class="nav nav-pills flex-column">
+                     <li class="nav-item">
+                         <a class="nav-link active" href="#">Active</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link " href="#">Link</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link " href="#">link</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                     </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>--%>
+                    <div class="col-sm-12  border border-info" style="height: 100%">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+
+            </div>
+
+            <br />
+            <div class="jumbotron text-center alert-danger" style="margin-bottom: 0; border: 2px solid red">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12 fa-copyright border-dark">
+                            <p class="text-center">&copy; Copyright 2024 - Badal Library. All rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
